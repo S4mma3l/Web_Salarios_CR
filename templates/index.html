@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios Mínimos Costa Rica 2025</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Salarios Mínimos Oficiales Costa Rica 2025</h1>
+        <p>Fuente: Ministerio de Trabajo y Seguridad Social (Datos extraídos del PDF oficial).</p>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Buscar Puesto</h2> {# Cambiado a Puesto #}
+            <input type="text" id="search-input" placeholder="Buscar por puesto, código o significado..."> {# Placeholder actualizado #}
+            </div>
+        </section>
+
+        <section id="results-section">
+            <h2>Resultados</h2>
+            <div id="salaries-list">
+                <p>Cargando datos...</p>
+            </div>
+        </section>
+
+        <section id="details-section" style="display: none;">
+             <h2>Detalle del Puesto Seleccionado</h2>
+             <div id="job-details">
+                 </div>
+             <button id="analyze-button" style="display: none;">Analizar Puesto con IA</button>
+             <div id="ai-analysis-result" style="display: none;"> {# Oculto por defecto y con ID para estilos #}
+                 </div>
+        </section>
+
+         {# Sección para futuros gráficos (inicialmente oculta) #}
+         <section id="charts-section" style="display: none;">
+             <h2>Gráficos de Salarios</h2>
+             <div id="salary-charts">
+                  </div>
+         </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aplicación de Salarios CR</p>
+    </footer>
+
+    {# Incluir la librería marked.js desde un CDN ANTES de tu script #}
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    {# Incluir tu script principal #}
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
