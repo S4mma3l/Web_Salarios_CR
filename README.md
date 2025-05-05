@@ -40,8 +40,8 @@ Sigue estos pasos para poner en marcha el proyecto:
 
 1.  **Clonar el Repositorio** (Si está en un repositorio Git)
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd <NOMBRE_DE_LA_CARPETA>
+    git clone https://github.com/S4mma3l/Web_Salarios_CR.git
+    cd Web_Salarios_CR
     ```
     O navega a la carpeta donde tienes los archivos del proyecto.
 
